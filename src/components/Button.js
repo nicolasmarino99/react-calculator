@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name }) => {
-    return <button className='Button'>{name}</button>
-}
+// eslint-disable-next-line react/button-has-type
+const Button = ({ name }) => <button className="Button">{name}</button>;
 Button.propTypes = {
-    name: PropTypes.string,
-  };
+  // eslint-disable-next-line react/require-default-props
+  name: PropTypes.string,
+};
 export default Button;
