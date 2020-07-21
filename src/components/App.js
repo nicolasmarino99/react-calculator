@@ -1,30 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import '../App.scss';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  } 
+  render() {
+    // eslint-disable-next-line react/jsx-one-expression-per-line
+    return (
+      <div className='calculator'>
+         
+          <Display />
+          <ButtonPanel />
+       
+      </div>
+    )
+  }
 }
-
 export default App;
