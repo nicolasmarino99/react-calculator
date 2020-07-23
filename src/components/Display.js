@@ -16,7 +16,6 @@ class Display extends React.Component {
     return (
       <div className="Display">
         <p>
-          Equals:
           {result}
         </p>
       </div>
