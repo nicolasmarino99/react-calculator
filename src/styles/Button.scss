@@ -1,31 +1,35 @@
 .Button {
-    height: 100%;
-    
-    border: 1px solid #c6c6c6;
-    font-weight: bold;
-    font-size: 1.3em;
-    &:hover {
-        background-color: #e0e0e0c5;
-        cursor: pointer;
-    }
-}
-.small-btn {
-    width: 25%;
-}
-.big-btn {
-    width: 50%;
-}
-.grey {
-    background-color: #e0e0e0;
-    &:hover {
-        background-color: #e0e0e0c5;
-    }
+  height: 100%;
+  border: 1px solid #c6c6c6;
+  font-weight: bold;
+  font-size: 1.3em;
+
+  &:hover {
+    background-color: #e0e0e0c5;
+    cursor: pointer;
+  }
 }
 
+.small-btn {
+  width: 25%;
+}
+
+.big-btn {
+  width: 50%;
+}
+
+.grey {
+  background-color: #e0e0e0;
+
+  &:hover {
+    background-color: #e0e0e0c5;
+  }
+}
 
 .orange {
-    background-color: #f5913e;
-    &:hover {
-        background-color: #c97836;
-    }
+  background-color: #f5913e;
+
+  &:hover {
+    background-color: #c97836;
+  }
 }
