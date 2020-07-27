@@ -30,7 +30,7 @@ class ButtonPanel extends React.Component {
           <Button name="+" />
         </div>
         <div className="row-container">
-          <Button name="0" wide color="grey"/>
+          <Button name="0" wide color="grey" />
           <Button name="." color="grey" />
           <Button name="=" />
         </div>
