@@ -3,16 +3,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = ({
-  name, size = 'small', color = 'gray',
+  name, wide = false, color = 'orange',
 }) => {
-  const sizeClass = `${size}-btn`;
+  let sizeClass;
+  // eslint-disable-next-line no-unused-expressions
+  wide ? sizeClass = 'big-btn' : sizeClass = 'small-btn';
   const colorClass = `${color}`;
   // eslint-disable-next-line react/button-has-type
   return <button className={`Button ${sizeClass} ${colorClass}`}>{name}</button>;
 };
 Button.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.string,
+  wide: PropTypes.bool,
   color: PropTypes.string,
 };
 export default Button;
