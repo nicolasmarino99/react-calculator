@@ -8,7 +8,7 @@ class Display extends React.Component {
     super(props);
 
     this.state = {
-      result: operate(8,2,'+'),
+      result: operate(8, 2, '+'),
     };
   }
 
