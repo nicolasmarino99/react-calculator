@@ -36,10 +36,8 @@ const calculate = (calculateObj, button) => {
         next: 0,
         operation: null,
       };
-    case '.':
-
     default:
-      break;
+      return { total, next, operation };
   }
 };
 
