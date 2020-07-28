@@ -1,13 +1,14 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
+import operate from '../logic/operate';
 
 class Display extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      result: '0',
+      result: operate(8,2,'+'),
     };
   }
 
