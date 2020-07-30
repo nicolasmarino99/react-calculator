@@ -15,6 +15,7 @@
     "sass": "^1.26.10"
   },
   "scripts": {
+    "lint": "eslint --fix --ext .js,.jsx .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
