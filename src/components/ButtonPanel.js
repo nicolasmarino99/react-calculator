@@ -4,7 +4,7 @@ import Button from './Button';
 class ButtonPanel extends React.Component {
 
   handleClick = buttonName => {
-    this.props.clickHandler(buttonName) 
+    this.props.clickHandler(buttonName); 
   };
   render() {
     return (

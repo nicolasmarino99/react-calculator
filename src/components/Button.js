@@ -2,6 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const handleClick = buttonName => {
+  this.props.clickHandler(buttonName); 
+};
+
 const Button = ({
   name, wide = false, color = 'orange',
 }) => {
