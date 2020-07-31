@@ -2,15 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({ result }) => {
-  return (
-    <div className="Display">
-      <p>
-        {result}
-      </p>
-    </div>
-  );
-};
+const Display = ({ result }) => (
+  <div className="Display">
+    <p>
+      {result}
+    </p>
+  </div>
+);
 Display.defaultProps = {
   result: '0',
 };

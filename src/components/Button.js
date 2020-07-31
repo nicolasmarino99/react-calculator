@@ -1,32 +1,30 @@
-/* eslint-disable react/require-default-props */
-import React, {Component} from 'react';
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Button extends Component {
-  static defaultProps = {
-    wide: false, 
-    color: 'orange',
-
-  }
-  handleClick = () => {
-    this.props.clickHandler(this.props.name);
-    console.log(this.props.name) 
-  };
-
   render() {
-    const {wide, name, color} = this.props
-    let sizeClass
-    
-    wide ? sizeClass = 'big-btn' : sizeClass = 'small-btn';
-    const colorClass = `${color}`;
+    const handleClick = () => {
+      // eslint-disable-next-line react/prop-types
+      this.props.clickHandler(this.props.name);
+    };
+    const { wide, name, color } = this.props;
 
-    return (<button className={`Button ${sizeClass} ${colorClass}` } onClick={this.handleClick}>{name}</button>)
+    const sizeClass = wide ? 'big-btn' : 'small-btn';
+    const colorClass = color || 'orange';
+
+    // eslint-disable-next-line react/button-has-type
+    return (<button className={`Button ${sizeClass} ${colorClass}`} onClick={handleClick}>{name}</button>);
   }
 }
 
 Button.propTypes = {
+  // eslint-disable-next-line react/require-default-props
   name: PropTypes.string,
+  // eslint-disable-next-line react/require-default-props
   wide: PropTypes.bool,
+  // eslint-disable-next-line react/require-default-props
   color: PropTypes.string,
 };
 export default Button;

@@ -9,23 +9,23 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      total: null, 
-      next: null, 
+      total: null,
+      next: null,
       operation: null,
     };
   }
-  handleClick = buttonName => {
-      this.setState(calculate(this.state, buttonName));
-    };
 
   render() {
     // eslint-disable-next-line react/jsx-one-expression-per-line
-    const { total, next } = this.state
-     
+    const { total, next } = this.state;
+    const handleClick = buttonName => {
+      // eslint-disable-next-line react/no-access-state-in-setstate
+      this.setState(calculate(this.state, buttonName));
+    };
     return (
       <div className="calculator">
-        <Display result={ next ? next : total} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <Display result={next || total} />
+        <ButtonPanel clickHandler={handleClick} />
       </div>
     );
   }
