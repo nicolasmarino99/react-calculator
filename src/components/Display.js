@@ -7,7 +7,7 @@ class Display extends React.Component {
     super(props);
 
     this.state = {
-      result: '0',
+      result: props,
     };
   }
 

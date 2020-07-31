@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../styles/App.scss';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
+class App extends Component {
   constructor() {
     super();
     this.state = {
