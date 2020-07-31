@@ -43,9 +43,45 @@ const calculate = (calculateObj, button) => {
       }
       return { total, next: null, operation: button, prevCalc: false };
     case '÷':
+      if (next && operation) {
+        return {
+          total: operate(total, next, operation),
+          next: null,
+          operation: button,
+          prevCalc: false,
+        };
+      }
+      return { total, next: null, operation: button, prevCalc: false };
     case 'X':
+      if (next && operation) {
+        return {
+          total: operate(total, next, operation),
+          next: null,
+          operation: button,
+          prevCalc: false,
+        };
+      }
+      return { total, next: null, operation: button, prevCalc: false };
     case '-':
+      if (next && operation) {
+        return {
+          total: operate(total, next, operation),
+          next: null,
+          operation: button,
+          prevCalc: false,
+        };
+      }
+      return { total, next: null, operation: button, prevCalc: false };
     case '+':
+      if (next && operation) {
+        return {
+          total: operate(total, next, operation),
+          next: null,
+          operation: button,
+          prevCalc: false,
+        };
+      }
+      return { total, next: null, operation: button, prevCalc: false };
     case '.':
       if (next) {
         return { prevCalc: false, total, next: `${next}.`, operation };

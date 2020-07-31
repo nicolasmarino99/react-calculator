@@ -10,7 +10,7 @@ class Button extends Component {
   }
   handleClick = () => {
     this.props.clickHandler(this.props.name);
-    //console.log(this.props.name) 
+    console.log(this.props.name) 
   };
 
   render() {
