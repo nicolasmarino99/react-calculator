@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Button from './Button';
 // eslint-disable-next-line react/prefer-stateless-function
-class ButtonPanel extends Component {
+class ButtonPanel extends React.Component {
 
   handleClick = buttonName => {
     this.props.clickHandler(buttonName); 

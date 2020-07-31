@@ -8,18 +8,19 @@ class Button extends Component {
     color: 'orange',
 
   }
-  handleClick = buttonName => {
-    this.props.clickHandler(buttonName); 
+  handleClick = () => {
+    this.props.clickHandler(this.props.name);
+    //console.log(this.props.name) 
   };
 
   render() {
-    const {name, wide, color} = this.props
+    const {wide, name, color} = this.props
     let sizeClass
     
     wide ? sizeClass = 'big-btn' : sizeClass = 'small-btn';
     const colorClass = `${color}`;
 
-    return (<button className={`Button ${sizeClass} ${colorClass}`}>{name}</button>)
+    return (<button className={`Button ${sizeClass} ${colorClass}` } onClick={this.handleClick}>{name}</button>)
   }
 }
 

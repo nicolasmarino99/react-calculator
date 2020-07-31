@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../styles/App.scss';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
-class App extends Component {
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -14,16 +14,17 @@ class App extends Component {
       operation: null,
     };
   }
+  handleClick = buttonName => {
+      this.setState(calculate(this.state, buttonName));
+    };
 
   render() {
     // eslint-disable-next-line react/jsx-one-expression-per-line
     const { total, next } = this.state
-    handleClick = (buttonName) => {
-      this.setState(calculate(this.state, buttonName));
-    }; 
+     
     return (
       <div className="calculator">
-        <Display { next ? next : total} />
+        <Display result={ next ? next : total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
