@@ -16,7 +16,6 @@ class App extends React.Component {
   }
 
   render() {
-    // eslint-disable-next-line react/jsx-one-expression-per-line
     const { total, next } = this.state;
     const handleClick = buttonName => {
       // eslint-disable-next-line react/no-access-state-in-setstate

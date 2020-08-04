@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// eslint-disable-next-line import/no-named-as-default-member
 import Button from './Button';
 // eslint-disable-next-line react/prefer-stateless-function
 class ButtonPanel extends React.Component {

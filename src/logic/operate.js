@@ -14,8 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (num2.eq(0)) { return '∞'; }
       return num1.div(num2).toString();
     case '%':
-      if (num2.eq(0)) { return '∞'; }
-      return num1.mod(num2).toString();
+      return `${num1.div(100).toString()}`;
     default:
       return 0;
   }

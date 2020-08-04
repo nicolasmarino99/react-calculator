@@ -36,13 +36,13 @@ const calculate = (calculateObj, button) => {
       if (next && operation) {
         return {
           total: operate(total, next, operation),
-          next: null,
+          next: total,
           operation: button,
           prevCalc: false,
         };
       }
       return {
-        total, next: null, operation: button, prevCalc: false,
+        total, next: total, operation: button, prevCalc: false,
       };
     case '÷':
       if (next && operation) {
