@@ -1,0 +1,14 @@
+.Display {
+  background-color: #858694;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  p {
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    font-size: 3em;
+  }
+}
