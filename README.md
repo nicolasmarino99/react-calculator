@@ -2,10 +2,11 @@
 The calculator counts with:
 - the 5 basic opertaions (+,-,/,*,%)
 - normal standart calculator functionalities
-[Live version](https://react-calculator99.herokuapp.com)
+
 
 ![screenshot](./src/imgs/calculator.jpg)
 
+[Live version](https://react-calculator99.herokuapp.com)
 ## Built With
 
 - HTML5 
